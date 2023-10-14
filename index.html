@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- javascript code -->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
+
+
+<body>
+    <div class="container">
+        <div class="entryarea">
+    <input type="password" id="myInput" required>
+    <div class="labelline">Enter Your Password</div>
+</div><br><br>
+<label><input type="checkbox" onclick="myFunction()" id="checkbox">Show Password</label>
+</div>
+</body>
+</html>
